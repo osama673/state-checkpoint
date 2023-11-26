@@ -1,38 +1,126 @@
-.App {
+body{
+    background-color: rgba(132, 136, 134, 0.164)
+}
+
+
+
+button{
+  background-color: #0078d0;
+  border: 0;
+  border-radius: 56px;
+  margin: 20px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
   text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+button:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: 16px 48px;
   }
 }
+ .title-name {
+  font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  -webkit-background-clip: text;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+h2{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ padding: 100px 50px;
+ 
+ width: 420px;
+ background-color: #0078d0;
+ border-radius: 50px;
+ color: rgb(232, 207, 207);
+
+box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.652);
 }
 
-.App-link {
-  color: #61dafb;
+
+.image {
+  
+  display: flex;
+  justify-content: right;
+  perspective: 3000px;
+  width: 25%;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+
+}
+.image img {
+  transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
+  box-shadow: -80px 60px 15px 5px rgba(0,0,0,0.4);
+  transition: all .4s;
+  transform-style: preserve-3d;
+  padding: 0;
+  width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.image:hover img {
+  transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.profession{
+display: flex;
+ padding: 50px 50px;
+font-size: 50px;
+ width: 420px;
+ background-color: #0078d0;
+ border-radius: 50px;
+ color: rgb(232, 207, 207);
+
+box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.652);
+
+}
+h5{
+  display: flex;
+ padding: 20px 50px;
+ font-size: 50px;
+ width: 420px;
+ background-color: #0078d0;
+ border-radius: 50px;
+ color: rgb(232, 207, 207);
+justify-content: center;
+box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.652);
 }

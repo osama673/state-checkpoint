@@ -1,0 +1,36 @@
+.navbar-container{
+   background-color: #d455685a;
+    display: flex;
+    justify-content:space-between ;
+    padding: 0 50px;
+
+}
+.nav-items-container{
+  
+  list-style-type: none;
+  display: flex;
+  padding: 18px ;
+  background-size: 400% 400%;
+  border-radius: 40px;
+ box-shadow: 3px 3px 20px #ff3352;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+li{
+    list-style-type: none;
+    font-family: verdana;
+
+}
+.logo,.request{
+    color: rgba(42, 165, 106, 0.671);
+}
+.fa-search{
+  
+    color: #ff3352;
+}
